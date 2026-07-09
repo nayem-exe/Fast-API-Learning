@@ -7,8 +7,8 @@ class Patient(BaseModel):
     name: str
     age: int
     weight: float
-    married: Optional[bool]
-    allergies: Optional[List[str]]
+    married: bool = False
+    allergies: Optional[List[str]] = None
     contact_details: Dict[str, str]
 
 def insert_patient_data(patient : Patient):
