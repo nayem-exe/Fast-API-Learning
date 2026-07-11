@@ -25,3 +25,12 @@ patient_1 = Patient(**patient_dict)
 print(patient_1)
 print(patient_1.name)
 print(patient_1.address.city)
+
+
+temp = patient_1.model_dump()
+print(temp)
+print(type(temp))
+
+temp2 = patient_1.model_dump_json()
+print(temp2)
+print(type(temp2))
